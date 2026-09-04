@@ -31,6 +31,8 @@
             font-size: 2.6rem;
             color: #7A6A2F;
             margin-bottom: 40px;
+            word-break: keep-all; /* 単語途中の改行を防止 */
+            overflow-wrap: break-word;
         }
 
         .section {
@@ -56,6 +58,13 @@
             border: 2px dashed #D8C2A8;
             text-align: center;
             box-sizing: border-box; /* はみ出し防止 */
+        }
+
+        .map-text {
+            display: inline-block;
+            word-break: keep-all;
+            overflow-wrap: break-word;
+            margin: 0 0 10px 0;
         }
 
         .btn-map {
@@ -95,7 +104,7 @@
         }
 
         @media (max-width: 768px) {
-            h1 { font-size: 2.2rem; }
+            h1 { font-size: 1.9rem; }
             .section { padding: 30px 20px; }
             
             /* スマホの時だけ改行を有効にする */
@@ -120,11 +129,11 @@
         <div class="section">
             <h2 class="section-title">地図</h2>
             <div class="map-placeholder">
-                <p>Googleマップで詳しい場所を確認できます</p>
+                <p class="map-text">Googleマップで詳しい場所を確認できます</p><br>
                 <a href="https://maps.google.com/?q=岡山県倉敷市片島町842-3" target="_blank" class="btn-map">
                     Googleマップで見る
                 </a>
-                <p style="font-size: 0.85rem; color: #888;">※別ウィンドウで地図が開きます</p>
+                <p style="font-size: 0.85rem; color: #888; margin: 0;">※別ウィンドウで地図が開きます</p>
             </div>
         </div>
 
