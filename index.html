@@ -120,6 +120,8 @@
             border-radius: 15px;
             border: 1px solid #D8C2A8;
             line-height: 1.5;
+            word-break: keep-all; /* 単語の途中での改行を防止 */
+            overflow-wrap: break-word;
         }
 
         .shorts-wrapper {
@@ -257,7 +259,7 @@
             <h2 class="section-title">営業時間・開校時間</h2>
             
             <div class="time-box">
-                <h3>🕒 月曜日 〜 金曜日（10:00 〜 21:15）</h3>
+                <h3>🕒 月曜日 〜 金曜日<br>（10:00 〜 21:15）</h3>
                 <ul class="time-list">
                     <li><strong>10:00 〜 13:00：</strong>学校復帰サポート（午前の学び）</li>
                     <li><strong>10:00 〜 14:30：</strong>保護者相談</li>
